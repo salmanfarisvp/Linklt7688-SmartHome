@@ -6,7 +6,7 @@ x.dir(mraa.DIR_OUT)
 true = 1
 while(true):
                 try:
-                        response = urllib2.urlopen('http://linkit7688-smarthome.azurewebsites.net/')
+                        response = urllib2.urlopen('http://linklt7688-smarthome.azurewebsites.net/buttonStatus.php')
                         status = response.read()
                 except urllib2.HTTPError, e:
                                         print e.code
